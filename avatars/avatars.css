@@ -1,0 +1,39 @@
+img{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.main{
+  display: flow-root;
+  margin: 0 auto;
+  background-color: skyblue;
+  min-height: 460px;
+}
+.uno{
+  float: left;
+  background-color: red;
+}
+.dos{
+  float: left;
+  background-color: orange;
+}
+.thress{
+  float: left;
+  background-color: yellow;
+}
+.quatro{
+  float: left;
+  background-color: green;
+}
+.one{
+
+}
+.two{
+
+}
+.three{
+
+}
+.four{
+
+}
