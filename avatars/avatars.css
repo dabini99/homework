@@ -3,27 +3,37 @@ img{
   height: 64px;
   border-radius: 50%;
 }
+body{
+
+}
 .main{
-  display: flow-root;
+  text-align: center;
   margin: 0 auto;
-  background-color: skyblue;
-  min-height: 460px;
+  min-height: 400px;
+  width: 400px;
+}
+.wrap{
+  float: left;
+  position: relative;
+}
+.wrap2{
+  float: left;
+  position: relative;
+}
+.mG{
+  margin: 10px;
 }
 .uno{
-  float: left;
-  background-color: red;
+
 }
 .dos{
-  float: left;
-  background-color: orange;
+
 }
 .thress{
-  float: left;
-  background-color: yellow;
+
 }
 .quatro{
-  float: left;
-  background-color: green;
+
 }
 .one{
 
@@ -36,4 +46,93 @@ img{
 }
 .four{
 
+}
+.doWrap{
+  position: absolute;
+  display: flex;
+  top: 64px;
+}
+.doWrap2{
+  position: absolute;
+  display: flex;
+  top: 155px;
+
+}
+.doI{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #4CFE88;
+  border: 1px solid white;
+  margin-left: 64px;
+}
+.doI:nth-child(1){
+  margin-left: 55px;
+}
+.doI:nth-child(2){
+
+}
+.doI:nth-child(3){
+  margin-left: 70px;
+}
+.doI:nth-child(4){
+  margin-left: 80px;
+}
+.doWrap .doI:nth-child(1){
+  background-color: #DBDBDB;
+}
+.doWrap .doI:nth-child(3){
+  background-color: #DBDBDB;
+}
+.doWrap2 .doI:nth-child(3){
+  background-color: #DBDBDB;
+}
+.doWrap2 .doI:nth-child(4){
+  background-color: #DBDBDB;
+}
+
+/* !flex를 지원하는 웹브라우저를 위한 스타일 */
+@supports (display: flex) {
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap{
+    display: flex;
+    order: -2;
+  }
+  .wrap2{
+    display: flex;
+    order: -3;
+  }
+  .doI:nth-child(1){
+    margin-left: 55px;
+  }
+  .doI:nth-child(2){
+  
+  }
+  .doI:nth-child(3){
+    margin-left: 68px;
+  }
+  .doI:nth-child(4){
+    margin-left: 68px;
+  }
+  .doWrap .doI:nth-child(1){
+    background-color: #4CFE88;
+  }
+  .doWrap .doI:nth-child(3){
+    background-color: #DBDBDB;
+  }
+  .doWrap .doI:nth-child(4){
+    background-color: #DBDBDB;
+  }
+  .doWrap2 .doI:nth-child(1){
+    background-color: #DBDBDB;
+  }
+  .doWrap2 .doI:nth-child(3){
+    background-color: #DBDBDB;
+  }
+  .doWrap2 .doI:nth-child(4){
+    background-color: #4CFE88;
+  }
 }
