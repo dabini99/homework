@@ -17,7 +17,7 @@ img태그 각각에 클래스를 넣어주고 float: left;를 스페인 숫자 1
 display:inline;으로 하고 text-align: center;로 했더니 메인 배경 색상이 쪼그만해졌다.. 이게 또 무슨 일인지 증말,,
 방법을 찾았다!
 - 감싸는 박스에 text-align: center;을 주고,
-- 안에 들어가는 img태그에는 display: inline-block;를 넣으면 된다
+- 안에 들어가는 img태그에는 display: inline-block;를 넣으면 된다<br/>
 왜 이렇게 해야하는지 이해가 안간다,,
 이제 중앙으로 배치 했으니 두줄로 줄 바꿈을 해줘야 할 차례이다
 float를 줄바꿈 할려고 하니 아마도 그룹을 다시 만들어 줘야 할 것 같아서 <br>태그로 줄 바꿈을 했다.<br/>
