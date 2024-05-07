@@ -1,0 +1,61 @@
+.avatar{
+  --size:64px;
+  box-sizing: border-box;
+
+  margin: 0;
+  position: relative;
+  inline-size: var(--size);
+  block-size: var(--size);
+
+  img{
+    inline-size: inherit;
+    block-size: inherit;
+    border-radius: 50%;
+  }
+
+  figcaption{
+    --size: 18px;
+
+    inline-size: var(--size, 18px);
+    block-size: var(--size, 18px);
+    background-color: #aaa;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-sizing: inherit;
+
+    /* inline-end: 0;
+    block-end: 0; */
+  }
+
+  &.is-online{
+    figcaption{
+      background-color: hsla(110, 100%, 30%, 1);
+    }
+  }
+}
+/* member layout */
+.member{
+  border: 1px solid red;
+  inline-size: 338px;
+  margin: 50px auto;
+
+  ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0;
+    display: flow-root;
+  }
+  li{
+    margin: 10px;
+    float: left;
+  }
+}
+
+@supports (display: flex){
+  .member{
+    float: none;
+  }
+}
