@@ -107,19 +107,21 @@
       }
     }
   }
-  @media (max-width:767px){
-    .checkbox-group{
-      position: relative;
+@media (max-width:767px){
+  .checkbox-group{
+    position: relative;
 
-    }
-    .form-checkbox{
-      position: absolute;
-      right: 0;
-    }
-    .ipSecurity{
-      display: none;
-    }
   }
+  .form-checkbox{
+    position: absolute;
+    right: 0;
+  }
+  .ipSecurity{
+    display: none;
+  }
+}
 @media (min-width:768px){
-
+  .login-form{
+    width: 500px;
+  }
 }
