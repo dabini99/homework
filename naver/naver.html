@@ -4,33 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>naver</title>
+  <link rel="stylesheet" href="/naver/naver.css" />
 </head>
 <body>
-  <div>
-    <img src="/naver/icons/logo.svg" src="/naver/icons/logo.png" alt="" />
+  <div class="login-group">
+    <img src="/naver/icons/logo.svg" src="/naver/icons/logo.png" alt="" class="logoImg"/>
 
-    <form action="/">
+    <form action="/" class="login-form">
       <div class="login-inputGroup">
         <div role="group" class="form-input">
-          <label for="userId">아이디</label>
+          <label for="userId"></label>
           <input type="email" id="userId" required placeholder="아이디(이메일)" name="userId"/>
         </div>
         <div role="group" class="form-input">
-          <label for="userPwd">비밀번호</label>
+          <label for="userPwd"></label>
           <input type="password" id="userPwd" required placeholder="비밀번호" name="userPwd"/>
         </div>
       </div>
 
       <button type="submit" class="login-button">로그인</button>
 
-      <div class="checkbox-inputGroup">
-        <label for="checkbox-input">로그인 상태 유지</label>
-        <input type="checkbox" id="checkbox-input"/>
-      </div>
-
-      <div class="toggle-inputGroup">
-        <label for="toggle">IP보안</label>
-        <input role="switch" type="checkbox" id="toggle"/>
+      <div class="checkbox-group">
+        <div class="form-checkbox">
+          <input type="checkbox" id="checkbox-input" name="checkbox-input"/>
+          <label for="checkbox-input">로그인 상태 유지</label>
+        </div>
+        <ul class="ipSecurity">
+          <li><a href="./ip_security.html" target="_blank" class="ipSecurity-link">IP보안 <span>ON</span></a></li>
+        </ul>
       </div>
 
     </form>

@@ -1,3 +1,125 @@
-@media (max-width:767px){
+
+  body{
+    font-size: 16px;
+    color: #181818;
+    margin: 0.3125rem;
+  }
   
+  .login-group{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 5rem;
+
+    .logoImg{
+      width: 230px;
+      
+    } 
+  }
+  .login-form{
+    width: 100%;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    margin-top: 3.125rem;
+  }
+  .login-inputGroup{
+    
+    
+    
+
+    .form-input{
+      width: 100%;
+      margin-bottom: 0.9375rem;
+
+      input{
+        width: 100%;
+        padding: 0 1.25rem;
+        font-size: 0.875rem;
+        height: 45px;
+        background-color: #fff;
+        border: 1px solid #dadada;
+        box-sizing: border-box;
+
+        &:focus{
+          border: 1px solid #03cf5d;
+          background-color: #e9f0fd;
+        }
+      }
+    }
+  }
+  .login-button{
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    background-color: #03cf5d;
+    border: 1px solid #dadada;
+    font-size: 0.875rem;
+    margin-top: 0.3125rem;
+  }
+  .checkbox-group{
+    width: 100%;
+    display: flex;
+    margin-top: 0.625rem;
+    justify-content: space-between;
+  }
+  /* 체크박스 */
+  .form-checkbox{
+    position: relative;
+
+    input{
+      position: absolute;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      
+    }
+    label{
+      background: url(/naver/icons/unchecked.svg) no-repeat 0 0 /contain;
+      padding-left: 25px;
+    }
+
+    input:checked + label{
+      background-image: url(/naver/icons/checked.svg);
+    }
+
+    input:focus{
+      outline: none;
+    }
+
+    input:focus-visible{
+      outline: 2px solid red;
+      outline-offset: 4px;
+    }
+  }
+  .ipSecurity{
+    margin: 0;
+    > li{
+      list-style-type: none;
+    }
+    .ipSecurity-link{
+      font-size: 1rem;
+      color: #181818;
+      text-decoration: none;
+      
+      span{
+        color: #03cf5d;
+      }
+    }
+  }
+  @media (max-width:767px){
+    .checkbox-group{
+      position: relative;
+
+    }
+    .form-checkbox{
+      position: absolute;
+      right: 0;
+    }
+    .ipSecurity{
+      display: none;
+    }
+  }
+@media (min-width:768px){
+
 }
