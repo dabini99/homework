@@ -1,0 +1,1 @@
+[해야할 것들 적어둠](https://github.com/dabini99/homework/blob/main/naver/mds/num1.jpg)
